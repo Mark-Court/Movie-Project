@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    padding: 8px 16px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.color__text {
+    color: #ed0707;
+}
+
+/* NAV */
+
+.nav__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 12px 38px 0 #ed0707;
+}
+
+.web__title {
+}
+
+.main__logo--wrapper {
+    width: 80px;
+    padding: 8px;
+}
+
+.main__logo {
+    width: 100%;
+}
