@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Library</title>
+    <script src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="container">
+        <div class="row">
+          <nav class="nav__main">
+            <div class="nav__left">
+              <figure class="main__logo--wrapper">
+                <img
+                  src="./assets/library-movie-book.png"
+                  alt=""
+                  class="main__logo"
+                />
+              </figure>
+              <h2 class="web__title">
+                <b class="color__text">M</b>ovie
+                <b class="color__text">L</b>ibrary
+              </h2>
+            </div>
+            <div class="nav__right">
+              <ul class="nav__links">
+                <a href="./index.html" class="nav__link link__hover-effect"
+                  ><b class="color__text">H</b>ome</a
+                >
+                <a href="#" class="nav__link link__hover-effect"
+                  ><b class="color__text">C</b>ontact</a
+                >
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <main class="movie__row">
+      <div class="container">
+        <div class="row">
+          <div class="search__background">
+            <div class="movie__search">
+              <div class="search__left">
+                <div class="search__wrapper">
+                    <input
+                    placeholder="Type in the movie name or year"
+                    class="movie__search--bar"
+                    type="search"
+                    name=""
+                    id=""
+                    />
+                    <a href="#" class="btn__hover search__icon--movie">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+              </div>
+              <div class="search__right">
+                <select id="filter" onchange="">
+                  <option value="" disabled selected>Sort</option>
+                  <option value="low_to_high">Old to New</option>
+                  <option value="high_to_low">New to Old</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="movie__wrapper">
+            <div class="movie click">
+              <figure class="movie__img--wrapper">
+                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
+              </figure>
+              <div class="movie__details">
+                <div class="movie__title">Movie</div>
+                <div class="movie__year">year</div>
+              </div>
+            </div>
+            <div class="movie click">
+              <figure class="movie__img--wrapper">
+                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
+              </figure>
+              <div class="movie__details">
+                <div class="movie__title">Movie</div>
+                <div class="movie__year">year</div>
+              </div>
+            </div>
+            <div class="movie click">
+              <figure class="movie__img--wrapper">
+                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
+              </figure>
+              <div class="movie__details">
+                <div class="movie__title">Movie</div>
+                <div class="movie__year">year</div>
+              </div>
+            </div>
+            <div class="movie click">
+              <figure class="movie__img--wrapper">
+                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
+              </figure>
+              <div class="movie__details">
+                <div class="movie__title">Movie</div>
+                <div class="movie__year">year</div>
+              </div>
+            </div>
+            <div class="movie click">
+              <figure class="movie__img--wrapper">
+                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
+              </figure>
+              <div class="movie__details">
+                <div class="movie__title">Movie</div>
+                <div class="movie__year">year</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer__wrapper">
+            <div class="logo__wrapper">
+              <figure class="footer__logo">
+                <img
+                  src="./assets/library-movie-book.png"
+                  alt=""
+                  class="footer__img"
+                />
+              </figure>
+            </div>
+            <ul class="footer__links">
+              <a href="./index.html" class="link link__hover-effect"
+                ><b class="color__text">H</b>ome</a
+              >
+              <a href="#" class="link link__hover-effect"
+                ><b class="color__text">C</b>ontact</a
+              >
+              <a href="./movie.html" class="link link__hover-effect"
+                ><b class="color__text">M</b>ovies</a
+              >
+              <a
+                href="https://github.com/Mark-Court"
+                class="link link__hover-effect"
+                target="_blank"
+                ><b class="color__text">G</b>ithub</a
+              >
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
