@@ -218,7 +218,8 @@ footer {
 }
 
 .logo__wrapper {
-  border: 1px solid black;
+  border: 1px solid #ec5b5b;
+  filter: drop-shadow(0px 0px 10px #ec5b5b);
   border-radius: 16px;
   padding: 8px 12px;
   background-color: #333333;
@@ -247,9 +248,15 @@ footer {
   position: relative;
 }
 
+.copyright {
+  color: rgb(247, 189, 189);
+  filter: drop-shadow(0px 0px 10px #ec5b5b);
+}
+
 /* MOVIE HTML */
 
 .movie__wrapper {
+  height: calc(100vh - 250px);
   background: #242424;
   padding: 24px;
   border-radius: 15px;
@@ -355,4 +362,34 @@ footer {
   color: white;
   text-align: center;
   transition: all 320ms ease;
+}
+
+.movies__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #ec5b5b;
+}
+
+.movies__loading--spinner {
+  display: none !important;
+}
+
+.movies__loading .movies__loading--spinner {
+  display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

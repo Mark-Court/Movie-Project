@@ -71,8 +71,8 @@
               <div class="search__right">
                 <select id="filter" onchange="">
                   <option value="" disabled selected>Sort</option>
-                  <option value="low_to_high">Old to New</option>
-                  <option value="high_to_low">New to Old</option>
+                  <option value="old_to_new">Old to New</option>
+                  <option value="new_to_old">New to Old</option>
                 </select>
               </div>
             </div>
@@ -82,50 +82,8 @@
       <div class="container">
         <div class="row">
           <div class="movie__wrapper">
-            <div class="movie click">
-              <figure class="movie__img--wrapper">
-                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
-              </figure>
-              <div class="movie__details">
-                <div class="movie__title">Movie</div>
-                <div class="movie__year">year</div>
-              </div>
-            </div>
-            <div class="movie click">
-              <figure class="movie__img--wrapper">
-                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
-              </figure>
-              <div class="movie__details">
-                <div class="movie__title">Movie</div>
-                <div class="movie__year">year</div>
-              </div>
-            </div>
-            <div class="movie click">
-              <figure class="movie__img--wrapper">
-                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
-              </figure>
-              <div class="movie__details">
-                <div class="movie__title">Movie</div>
-                <div class="movie__year">year</div>
-              </div>
-            </div>
-            <div class="movie click">
-              <figure class="movie__img--wrapper">
-                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
-              </figure>
-              <div class="movie__details">
-                <div class="movie__title">Movie</div>
-                <div class="movie__year">year</div>
-              </div>
-            </div>
-            <div class="movie click">
-              <figure class="movie__img--wrapper">
-                <img src="./assets/Jaws.jpg" alt="" class="movie__img" />
-              </figure>
-              <div class="movie__details">
-                <div class="movie__title">Movie</div>
-                <div class="movie__year">year</div>
-              </div>
+            <div class="movies">
+              <i class="fas fa-spinner movies__loading--spinner"></i>
             </div>
           </div>
         </div>
@@ -161,6 +119,7 @@
                 ><b class="color__text">G</b>ithub</a
               >
             </ul>
+            <div class="copyright">© 2024 Movie Library</div>
           </div>
         </div>
       </div>
