@@ -369,7 +369,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
+  width: 100%;
+  padding: 139px 0;
   font-size: 60px;
   color: #ec5b5b;
 }

@@ -55,16 +55,16 @@
           <div class="search__background">
             <div class="movie__search">
               <div class="search__left">
-                <div class="search__wrapper">
+                <form class="search__wrapper">
                     <input
                     placeholder="Type in the movie name or year"
                     class="movie__search--bar"
                     type="text"
                     />
-                    <button onclick="renderMovies(event)" href="#" class="btn__hover search__icon--movie">
+                    <button onclick="renderMovies(event)" class="btn__hover search__icon--movie">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                </div>
+                </form>
               </div>
               <div class="search__right">
                 <select id="filter" onchange="filterMovies(event)">
@@ -81,7 +81,9 @@
         <div class="row">
           <div class="movie__wrapper">
             <div class="movies">
-              <i class="fas fa-spinner movies__loading--spinner"></i>
+              <div class="movies__loading">
+                <i class="fas fa-spinner movies__loading--spinner"></i>
+              </div>
             </div>
           </div>
         </div>

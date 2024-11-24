@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Library</title>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -58,16 +58,12 @@
                   America's best movies are here with Movie Library
                 </h1>
                 <h3 class="search__text">Find your movie here</h3>
-                <div class="search__wrapper">
-                  <input
-                    class="search__bar"
-                    type="text"
-                    placeholder="Type in the movie name"
-                  />
-                  <button onclick="renderMovies(event)" href="./movie.html" class="btn__hover search__icon">
+                <form id="form" class="search__wrapper">
+                  <input placeholder="Type in the movie name" type="text" class="search__bar" id="title">
+                  <button type="submit" class="btn__hover search__icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
