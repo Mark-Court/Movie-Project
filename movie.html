@@ -40,7 +40,7 @@
                 <a href="./index.html" class="nav__link link__hover-effect"
                   ><b class="color__text">H</b>ome</a
                 >
-                <a href="#" class="nav__link link__hover-effect"
+                <a href="#" class="no__click nav__link link__hover-effect"
                   ><b class="color__text">C</b>ontact</a
                 >
               </ul>
@@ -55,13 +55,13 @@
           <div class="search__background">
             <div class="movie__search">
               <div class="search__left">
-                <form class="search__wrapper">
+                <form id="form" class="search__wrapper">
                     <input
                     placeholder="Type in the movie name or year"
                     class="movie__search--bar"
                     type="text"
                     />
-                    <button onclick="renderMovies(event)" class="btn__hover search__icon--movie">
+                    <button type="submit" onclick="renderMovies(event)" class="btn__hover search__icon--movie">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
@@ -69,8 +69,8 @@
               <div class="search__right">
                 <select id="filter" onchange="filterMovies(event)">
                   <option value="" disabled selected>Sort</option>
-                  <option value="old_to_new">New to Old</option>
-                  <option value="new_to_old">Old to New</option>
+                  <option value="old_to_new">Old to New</option>
+                  <option value="new_to_old">New to Old</option>
                 </select>
               </div>
             </div>
@@ -106,7 +106,7 @@
               <a href="./index.html" class="link link__hover-effect"
                 ><b class="color__text">H</b>ome</a
               >
-              <a href="#" class="link link__hover-effect"
+              <a href="#" class="no__click link link__hover-effect"
                 ><b class="color__text">C</b>ontact</a
               >
               <a href="./movie.html" class="link link__hover-effect"
