@@ -422,6 +422,10 @@ footer {
     max-width: 350px;
   }
 
+  .nav__link {
+    padding: 0 16px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -437,9 +441,9 @@ footer {
     border-radius: 0;
   }
 
+
   .nav__left {
-    margin: 8px;
-    width: 30%;
+    margin: 16px;
   }
 
   .web__title {
@@ -470,19 +474,24 @@ footer {
 
   .search__background {
     margin: 16px auto;
+    width: 100%;
+    border-radius: 0;
   }
 
   .movie__search {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .movie__search--bar {
     margin-bottom: 8px;
+    width: 500px;
   }
 
   .movie__wrapper {
     margin: 16px;
+    padding: 0;
   }
 
   .movie {
